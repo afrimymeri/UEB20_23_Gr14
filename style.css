@@ -1,0 +1,14 @@
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightgreen;
+}
+.alinks{
+    color : black;
+    text-decoration: none;
+    margin: 25px;
+}
+.alinks:hover{
+    color:gray;
+}
