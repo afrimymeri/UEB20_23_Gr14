@@ -1,8 +1,8 @@
+
 .links {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: lightgreen;
 }
 .alinks{
     color : black;
@@ -10,5 +10,62 @@
     margin: 25px;
 }
 .alinks:hover{
-    color:gray;
+    color:rgba(105, 207, 190, 1);
 }
+.alinks:active{
+    color:rgba(105,207,190,1);
+}
+
+
+
+  
+  header {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .content {
+    padding: 10px;
+  }
+
+  *{
+    font-family:  Verdana, sans-serif;  
+  }
+
+  footer {
+    background-color: rgba(105, 207, 190, 1);
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  .footer-links {
+    margin-top: 10px;
+  }
+
+  .footer-links a {
+    color: #000;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+
+  .footer-social {
+    margin-top: 15px;
+  }
+
+  .footer-social a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  
