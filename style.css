@@ -23,6 +23,7 @@
     color: #fff;
     padding: 10px;
     text-align: center;
+    border: 1px solid black;
   }
   
   .content {
@@ -30,11 +31,11 @@
   }
 
   *{
-    font-family:  Verdana, sans-serif;  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
   }
 
   footer {
-    background-color: rgba(105, 207, 190, 1);
+    /* background-color:#0082e6 ; */
     color: #000;
     text-align: center;
     padding: 20px 0;
@@ -68,4 +69,69 @@
     font-size: 20px;
   }
 
-  
+  *{
+    padding : 0;
+    margin : 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image : url(/images/back2.jpg);
+    background-size: cover;
+    background-repeat:repeat ;
+    background-position: center;
+}
+
+  nav{
+   
+    height : 80px;
+    width: 100%;
+  }
+
+  label.logo{
+    color:white;
+    font-size : 35px;
+    line-height: 80px;
+    padding : 0 100px;
+    font-weight: bold;
+  }
+
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+
+  nav ul li {
+    display : inline-block;
+    line-height : 80px;
+    margin : 0 5px;
+  }
+  nav ul li a {
+    color : white;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+  a.active,a:hover{
+    background : #1b9bff;
+    transition : .5s;
+  }
+
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right:40px;
+    cursor: pointer;
+    display: none;
+}
+  #check{
+    display:none;
+  }
