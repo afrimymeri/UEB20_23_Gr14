@@ -18,7 +18,9 @@
     color:rgba(105,207,190,1);
 }
 
-
+.blend {
+    mix-blend-mode: multiply;
+}
 
   
   header {
@@ -165,16 +167,16 @@ body{
     position: relative;
     text-align: center;
     display: flex;
-    -webkit-justify-content: center;
     justify-content: center;
     align-items: center;
     padding: 60px;
 }
 .from-content , .form-items{
     border: 3px solid #fff;
-    padding : 40px;
+    padding-top : 40px;
+    padding-bottom: 40px;
     display: inline-block;
-    width: 100%;
+    width: 90%;
     min-width: 540px;
     border-radius:10px ;
     text-align: center;
@@ -249,4 +251,37 @@ body{
     color: #8D8D8D;
     transition: all 0.3s ease;
     margin-top: 16px;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    font-size : 20px;
+    font-weight : 200;
+    padding : 10px 20px 10px;
+    outline:0;
+    border : 1px solid black;
+    cursor : pointer;
+    position: relative;
+    background-color: white;
+    border-radius:15px ;
+}
+/* .button:after{
+    background-color: #1b9bff;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: .2s;
+} */
+.button:hover{
+    transition:.5s;
+    background-color: lightblue;
 }
