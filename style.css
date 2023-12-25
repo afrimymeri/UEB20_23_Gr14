@@ -302,3 +302,27 @@ form{
   border: 1px solid white;
   border-radius: 15px;
 }
+.Doktori{
+ text-align: center;
+ border: 5px solid white;
+ border-radius: 15px;
+
+}
+.docPic{
+  position:initial;
+  max-width: 100%;
+  display:block;
+  margin:0 auto;
+  margin-left: 65px;
+  margin-top: 30px;
+}
+
+.titulli{
+  
+  text-align:center;
+  margin-left: 20px;
+  text-decoration: underline;
+  margin-top:40px;
+
+
+}
