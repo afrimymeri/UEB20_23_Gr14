@@ -286,6 +286,9 @@ form{
   border: 1px solid black;
   border-radius: 5px;
 }
+.card-text{
+  text-align: center;
+}
 
 .loginbutton{
   text-decoration: none;
