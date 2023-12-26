@@ -302,21 +302,26 @@ form{
   border: 1px solid white;
   border-radius: 15px;
 }
-.Doktori{
- text-align: center;
- border: 5px solid white;
- border-radius: 15px;
-
-}
-.docPic{
+/* .docPic{
   position:initial;
   max-width: 100%;
   display:block;
   margin:0 auto;
   margin-left: 65px;
   margin-top: 30px;
+} */
+.docPic{
+  border : 3px dotted #fff;
+  border-radius: 30px;
+  padding:5px;
 }
+.Doktori{
+  padding: 15px;
 
+}
+.dokList{
+  padding: 15px;
+}
 .titulli{
   
   text-align:center;
@@ -325,4 +330,23 @@ form{
   margin-top:40px;
 
 
+}
+.dokContainer {
+  text-align: center;
+
+}
+.dokCard{
+  display:inline-block;
+  width: 70%;
+  height: 50%;
+  border : 2px solid #1b9bff;
+  background-color: #ebeff8;
+  border-radius: 15px;
+} 
+
+.logBtn{
+  color: red;
+}
+.logBtn:hover{
+  color:red;
 }
