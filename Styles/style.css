@@ -1,22 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-
-.links {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.alinks{
-    color : black;
-    text-decoration: none;
-    margin: 25px;
-}
-.alinks:hover{
-    color:rgba(105, 207, 190, 1);
-}
-.alinks:active{
-    color:rgba(105,207,190,1);
-}
 .medclinic{
 background-image: url(/images/medclinic.jpg);
 width: 100%;
@@ -26,7 +9,7 @@ justify-content: center;
 align-items: center;
 background-blend-mode: darken;
 border:3px solid #8D8D8D;
-border-radius: 150px;
+border-radius: 130px;
 }
 .medclinic h1{
     font-family: montserrat;
@@ -97,7 +80,7 @@ border-radius: 150px;
 body{
     font-family: 'Montserrat';
     /* 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-    background-image : url(/images/back2.jpg);
+    background-image : url(../images/back2.jpg);
     background-size: cover;
     background-repeat:repeat ;
     background-position: center;
@@ -175,7 +158,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 100vh;
+    min-height: 5px;
 }
 .form-holder , .from-content{
     position: relative;
@@ -183,7 +166,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px;
 }
 .from-content , .form-items{
     border: 3px solid #fff;
@@ -204,7 +186,7 @@ body{
     margin-bottom: 5px;
 }
 .form-content , h3.form-title{
-    margin-bottom :30px;
+    margin-bottom :20px;
 }
 .form-content p {
     color : #fff;
@@ -252,7 +234,7 @@ body{
 }
 
 
-.form-content input[type=text], .form-content input[type=date], .form-content input[type=email], .form-content input[type=number],.form-content textarea, .form-content select {
+.form-content input[type=text], .form-content input[type=password], .form-content input[type=date], .form-content input[type=email], .form-content input[type=number],.form-content textarea, .form-content select {
     width: 100%;
     padding: 9px 20px;
     text-align: left;
@@ -264,7 +246,7 @@ body{
     font-weight: 300;
     color: #8D8D8D;
     transition: all 0.3s ease;
-    margin-top: 16px;
+    margin-top: 26px;
 }
 
 form{
@@ -290,4 +272,191 @@ form{
     color: white;
     transition:.5s;
     background-color: lightblue;
+}
+.card-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .card-body {
+  border: 1px solid black;
+  border-radius: 1px;
+} 
+.card-img-top{
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.card-text{
+  text-align: center;
+}
+
+.loginbutton{
+  text-decoration: none;
+  color:black;
+}
+.loginbutton:hover{
+  color: white;
+}
+.navbar-a-des{
+
+  border: 1px solid white;
+  border-radius: 15px;
+}
+/* .docPic{
+  position:initial;
+  max-width: 100%;
+  display:block;
+  margin:0 auto;
+  margin-left: 65px;
+  margin-top: 30px;
+} */
+.docPic{
+  border : 3px dotted #fff;
+  border-radius: 30px;
+  padding:5px;
+}
+.Doktori{
+  padding: 15px;
+
+}
+.dokList{
+  padding: 15px;
+}
+.titulli{
+  
+  text-align:center;
+  margin-left: 20px;
+  text-decoration: underline;
+  margin-top:40px;
+
+
+}
+.dokContainer {
+  text-align: center;
+
+}
+.dokCard{
+  display:inline-block;
+  width: 70%;
+  height: 50%;
+  border : 2px solid #1b9bff;
+  background-color: #ebeff8;
+  border-radius: 15px;
+} 
+
+.logBtn{
+  color: red;
+}
+.logBtn:hover{
+  color:red;
+}
+
+/* from: https://davidwalsh.name/css-flip  */
+
+section {
+  &.custom {
+    .up {
+      color: #55DD11;
+    }
+    .card {
+      text-align: center;
+      color: #FFFFFF;
+      width: 100%;
+      height: 300px;
+      transition: 0.6s;
+      transform-style: preserve-3d;
+      position: relative;
+      background-color: #654321;
+    }
+    .flipper {
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-bottom: 10px;
+      perspective: 1000px;
+    }
+    /* flip the pane when hovered */
+    .flipper.flip .card {
+      transform: rotateY(180deg);
+    }
+    .front,
+    .back {
+      width: 100%;
+      padding: 5px;
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    /* front pane, placed above back */
+    .front {
+      z-index: 2;
+      /* for firefox 31 */
+      transform: rotateY(0deg);
+      height: 100%;
+    }
+    /* back, initially hidden pane */
+    .back {
+      transform: rotateY(180deg);
+      height: 100%;
+    }
+    .goback {
+      position: absolute;
+      bottom: 0px;
+      padding-left: 20px;
+      left: 0px;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+
+.card-block .btn-outline-primary {
+  width: 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.card {
+  margin: 20px 0;
+}
+
+/* Flip Cards CSS */
+.card-container {
+  perspective: 700px;
+}
+.card-flip {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  height: auto;
+  transition: all 0.5s ease-out;
+  background: white;
+  border: none;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.card-flip .front {
+  position: relative;
+  z-index: 1;
+}
+
+.card-flip .back {
+  position: relative;
+  z-index: 0;
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
 }
