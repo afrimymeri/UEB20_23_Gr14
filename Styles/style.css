@@ -80,7 +80,7 @@ border-radius: 130px;
 body{
     font-family: 'Montserrat';
     /* 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-    background-image : url(/images/back2.jpg);
+    background-image : url(../images/back2.jpg);
     background-size: cover;
     background-repeat:repeat ;
     background-position: center;
@@ -349,4 +349,114 @@ form{
 }
 .logBtn:hover{
   color:red;
+}
+
+/* from: https://davidwalsh.name/css-flip  */
+
+section {
+  &.custom {
+    .up {
+      color: #55DD11;
+    }
+    .card {
+      text-align: center;
+      color: #FFFFFF;
+      width: 100%;
+      height: 300px;
+      transition: 0.6s;
+      transform-style: preserve-3d;
+      position: relative;
+      background-color: #654321;
+    }
+    .flipper {
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-bottom: 10px;
+      perspective: 1000px;
+    }
+    /* flip the pane when hovered */
+    .flipper.flip .card {
+      transform: rotateY(180deg);
+    }
+    .front,
+    .back {
+      width: 100%;
+      padding: 5px;
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    /* front pane, placed above back */
+    .front {
+      z-index: 2;
+      /* for firefox 31 */
+      transform: rotateY(0deg);
+      height: 100%;
+    }
+    /* back, initially hidden pane */
+    .back {
+      transform: rotateY(180deg);
+      height: 100%;
+    }
+    .goback {
+      position: absolute;
+      bottom: 0px;
+      padding-left: 20px;
+      left: 0px;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+
+.card-block .btn-outline-primary {
+  width: 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.card {
+  margin: 20px 0;
+}
+
+/* Flip Cards CSS */
+.card-container {
+  perspective: 700px;
+}
+.card-flip {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  height: auto;
+  transition: all 0.5s ease-out;
+  background: white;
+  border: none;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.card-flip .front {
+  position: relative;
+  z-index: 1;
+}
+
+.card-flip .back {
+  position: relative;
+  z-index: 0;
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
 }
