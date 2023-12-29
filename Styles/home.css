@@ -1,12 +1,48 @@
 .wrapper {
 
     margin: 50px;
-    width: 70%;
+    width: 0%;
     display: inline;
     text-align: center;
 }
 
-.container {
+.cont {
     background-color: aliceblue;
     border-radius: 100px;
+    width: 80%;
+    /* border: 2px solid aliceblue; */
+}
+.wrpTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hlthTxt {
+    padding: 30px;
+    font-weight: bold;
+}
+.foto{
+    width: 500px;
+    height: 350px;
+    border-radius: 15px;
+}
+.cntButton{
+    display: flex;
+    justify-content: center;
+}
+
+.button1{
+    width: 50%;
+    height : 50px;
+    border: 2px solid lightblue;
+    border-radius: 15px;
+    background-color: aliceblue;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

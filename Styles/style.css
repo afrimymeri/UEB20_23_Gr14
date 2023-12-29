@@ -279,11 +279,11 @@ form{
   align-items: center;
 }
  .card-body {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 1px;
 } 
 .card-img-top{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 5px;
 }
 .card-text{
