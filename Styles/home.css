@@ -1,3 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+    font-family: 'Montserrat';
+}
 .wrapper {
 
     margin: 50px;
@@ -36,7 +41,7 @@
 .button1{
     width: 50%;
     height : 50px;
-    border: 2px solid lightblue;
+    border: 2px solid #1b9bff;
     border-radius: 15px;
     background-color: aliceblue;
     text-decoration: none;
@@ -45,4 +50,47 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.button1:hover {
+    background-color: rgb(17, 191, 188);
+    transition: .55s;
+    border: 2px solid black;
+    color : aliceblue;
+}
+
+.divwrapp{
+    background-color: black;
+    display: inline-flex;
+    flex-direction: row;
+    padding: 115px;
+    border-radius: 15px;
+    margin: 20px;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box-main{
+    flex-direction: row;
+}
+
+#box {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.padCont {
+    margin: 30px;
+}
+.crdTxt{
+    color:white;
+    font-size : 37px;
+    text-align: center;
+    align-items: center;
+    font-family:'Montserrat';
+}
+.divwrapp:hover {
+    background-color : rgba(17, 191, 188,0.6);
+    transition: .65s ease;
 }
