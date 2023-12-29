@@ -1,0 +1,12 @@
+.wrapper {
+
+    margin: 50px;
+    width: 70%;
+    display: inline;
+    text-align: center;
+}
+
+.container {
+    background-color: aliceblue;
+    border-radius: 100px;
+}

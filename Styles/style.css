@@ -460,7 +460,3 @@ section {
 .card-container:hover .card-flip {
   transform: rotateY(180deg);
 }
-
-.btn-outline-info {
-  text-items: center;
-}
