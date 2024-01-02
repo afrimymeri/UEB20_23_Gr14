@@ -331,6 +331,12 @@ form{
 
 
 }
+.orari{
+  text-align: center;
+
+}
+
+
 .dokContainer {
   text-align: center;
 
@@ -343,6 +349,20 @@ form{
   background-color: #ebeff8;
   border-radius: 15px;
 } 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2; /* Gray background for header cells */
+}
 
 .logBtn{
   color: red;
