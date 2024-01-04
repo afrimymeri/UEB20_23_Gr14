@@ -1,9 +1,11 @@
 function allowDrop(ev) {
 	ev.preventDefault();
+	return false;	
 }
 
 function drag(ev) {
 	ev.dataTransfer.setData("text", ev.target.id);
+	return false;
 }
 
 function drop(ev) {
