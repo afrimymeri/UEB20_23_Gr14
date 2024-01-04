@@ -462,3 +462,10 @@ mark {
 .card-title {
   font-family: 'Trickster';
 }
+
+.bullet {
+  text-align: center;
+  align-items: center;
+  list-style: disc;
+}
+
