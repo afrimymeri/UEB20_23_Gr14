@@ -484,7 +484,6 @@ mark {
   margin-top: 30px;
 }
 
-
 .carousel-item .row {
   padding-top: 0;
   padding-bottom: 0;
@@ -498,6 +497,18 @@ mark {
   height: auto;
 }
 
+.modal-body button {
+  display: none;
+}
+img.treatments-card-img {
+  height: 300px;
+  object-fit: cover;
+}
+img.testimonials-img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+}
 .arrow-down {
   width: 0;
   height: 0;
