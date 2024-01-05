@@ -100,23 +100,33 @@ body{
   }
 
   nav ul {
+   
     float: right;
     margin-right: 20px;
+  
   }
 
   nav ul li {
+   
     display : inline-block;
     line-height : 80px;
     margin : 0 5px;
+  
+  
+    
   }
   nav ul li a {
+    
     /* color : white; */
     font-size: 17px;
     padding: 7px 13px;
     text-transform: uppercase;
     border-radius: 5px;
     text-decoration: none;
+
 }
+
+
 
 
   a.active,.navbar-a-des:hover{
@@ -288,6 +298,7 @@ form{
 }
 .card-text{
   text-align: center;
+  
 }
 
 .loginbutton{
@@ -317,10 +328,16 @@ form{
 }
 .Doktori{
   padding: 15px;
+  
 
 }
 .dokList{
   padding: 15px;
+ 
+  
+}
+.custom-bullets{
+  list-style-type: disc;
 }
 .titulli{
   
@@ -328,7 +345,7 @@ form{
   margin-left: 20px;
   text-decoration: underline;
   margin-top:40px;
-
+ 
 
 }
 .orari{
@@ -488,3 +505,31 @@ mark {
   border-right: 1.5625rem solid transparent;
   border-top: 1.25rem solid rgba(0, 0, 0, 0.5);
 }
+.bullet {
+  text-align: center;
+  align-items: center;
+  list-style: disc;
+}
+
+/*** Feature ***/
+@media (min-width: 992px) {
+  .container.feature {
+      max-width: 100% !important;
+  }
+
+  .feature-text  {
+      padding-left: calc(((100% - 960px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .feature-text  {
+      padding-left: calc(((100% - 1140px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 1400px) {
+  .feature-text  {
+      padding-left: calc(((100% - 1320px) / 2) + .75rem);
+  }
+} 

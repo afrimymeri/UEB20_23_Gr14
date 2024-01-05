@@ -95,3 +95,25 @@ body {
     background-color : rgba(17, 191, 188,0.6);
     transition: .65s ease;
 }
+
+@media only screen and (max-width: 767px) {
+    .wrpTxt {
+      text-align: center;
+    }
+    .col-md-6 {
+      width: 100%;
+    }
+    .logo {
+      display: block;
+    }
+    .navbar {
+      text-align: center;
+    }
+    .navbar ul {
+      display: none;
+    }
+    .navbar input[type="checkbox"]:checked + label + ul {
+      display: block;
+    }
+
+  }
