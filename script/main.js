@@ -1,4 +1,6 @@
-function allowDrop(ev) {
+
+
+  function allowDrop(ev) {
 	ev.preventDefault();
 	return false;	
 }

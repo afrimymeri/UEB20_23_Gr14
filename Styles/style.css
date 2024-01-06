@@ -126,9 +126,6 @@ body{
 
 }
 
-
-
-
   a.active,.navbar-a-des:hover{
     color:black;
     background : #1b9bff;
@@ -150,7 +147,7 @@ body{
 .navbar{
     overflow: hidden;
     position: fixed;
-    z-index: 1000;
+   
 
 }
 .row{
