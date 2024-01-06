@@ -30,7 +30,7 @@
                             <div class="form-items">
                                 <h3>Log In</h3>
                                 <p>Fill in the data below</p>
-                                <form class="requires-validation" novalidate onsubmit="handleLogin(event)">
+                                <form class="requires-validation" novalidate onSubmit="return validateForm()">
                                     <div class="col-md-6">
                                         <input class="form-control" type="email" name="email" placeholder="Email" required>
                                     </div>
@@ -63,13 +63,17 @@
       </footer>
 
       <script>
-        function handleLogin(event) {
-    event.preventDefault(); // Prevent default form submission
-    // Add your validation or other logic here
+        function validateForm() {
+            let username = document.forms[0]["email"].value;
+            let password = document.forms[0]["password"].value;
 
-    // If validation passes, redirect to the homepage
-    window.location.href = '/src/index.html';
-}
+            if (username === "" || password === "") {
+                alert("Email and password must be filled out");
+                return false; 
+            }
+                window.location.href = "/src/index.html";
+                return false;
+        }
       </script>
 </body> 
 </html>
