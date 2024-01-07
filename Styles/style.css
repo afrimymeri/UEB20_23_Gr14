@@ -514,8 +514,6 @@ img.testimonials-img {
   border-top: 1.25rem solid rgba(0, 0, 0, 0.5);
 }
 .bullet {
-  text-align: center;
-  align-items: center;
   list-style: disc;
 }
 

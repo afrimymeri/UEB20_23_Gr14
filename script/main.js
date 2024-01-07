@@ -1,4 +1,5 @@
-  function allowDrop(ev) {
+// drag n drop
+function allowDrop(ev) {
 	ev.preventDefault();
 	return false;	
 }
@@ -14,6 +15,9 @@ function drop(ev) {
 	var draggedElement = document.getElementById(data);
 	ev.target.appendChild(draggedElement);
 }
+
+//modali alfredit
+
 const myButton = document.getElementById('myButton');
         const myButton2 = document.getElementById('myButton2');
         const myButton3 = document.getElementById('myButton3');
@@ -111,6 +115,7 @@ const myButton = document.getElementById('myButton');
         const sot = new Date().toLocaleDateString();
         dataSot.textContent = sot;
         */
+
        function curdate(date) {
         const muajt = ["January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"];
