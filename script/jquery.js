@@ -47,3 +47,4 @@ $(document).ready(function() {
         marginTop: "20px" //e ul veq pak prej pozites qe mu vrejt 
     }, 2000); 
 });
+
