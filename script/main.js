@@ -114,3 +114,23 @@ const myButton = document.getElementById('myButton');
           
           modalBody.appendChild(content7.cloneNode(true));
         });
+
+        /* KQYR MA VON APO GJEN DIQKA
+        const dataSot = document.getElementById("dataSot");
+        const sot = new Date().toLocaleDateString();
+        dataSot.textContent = sot;
+        */
+       function curdate(date) {
+        const muajt = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"];
+        const dita = date.getDate();
+        const muaji = date.getMonth();
+        const viti = date.getFullYear();
+
+        return dita + " " + muajt[muaji] + " " + viti;
+       }
+       window.onload = function() {
+        const datasot = document.getElementById("dataSot");
+        const sot = new Date();
+        datasot.textContent = curdate(sot);
+       };
