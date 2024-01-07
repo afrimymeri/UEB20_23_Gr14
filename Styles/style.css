@@ -547,3 +547,76 @@ img.testimonials-img {
   color: white;
   transition: .5 ease;
 }
+
+
+/* Your existing CSS styles */
+
+/* Feedback Modal styles */
+#feedbackModal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#feedbackModal .modal-content {
+  text-align: center;
+  padding: 20px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#feedbackModal label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#feedbackModal input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+#feedbackModal button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#feedbackModal button:hover {
+  background-color: #45a049;
+}
+
+/* Close button styles */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#feedbackFormContainer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

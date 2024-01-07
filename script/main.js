@@ -4,6 +4,7 @@ function allowDrop(ev) {
 	return false;	
 }
 
+
 function drag(ev) {
 	ev.dataTransfer.setData("text", ev.target.id);
 	return false;
@@ -15,6 +16,71 @@ function drop(ev) {
 	var draggedElement = document.getElementById(data);
 	ev.target.appendChild(draggedElement);
 }
+
+//timeout
+document.addEventListener('DOMContentLoaded', function () {
+  // Function to display a welcome notification
+  function displayWelcomeNotification() {
+      alert('Welcome to our Medical Clinic!');
+  }
+
+  // Check if the welcome message has been shown before
+  const welcomeMessageShown = sessionStorage.getItem('welcomeMessageShown');
+
+  if (!welcomeMessageShown) {
+      // If not shown, set a timeout to call the displayWelcomeNotification function after 5 seconds
+      setTimeout(function () {
+          displayWelcomeNotification();
+          // Set a flag in sessionStorage to indicate that the welcome message has been shown
+          sessionStorage.setItem('welcomeMessageShown', 'true');
+      }, 2000);
+  }
+});
+
+//feedback
+document.addEventListener('DOMContentLoaded', function () {
+  // Feedback Button
+  const feedbackButton = document.getElementById('feedbackButton');
+  feedbackButton.addEventListener('click', displayFeedbackForm);
+
+  // Next Button
+  const nextButton = document.querySelector('.modal-content form button');
+  nextButton.addEventListener('click', closeFeedbackForm);
+
+  // Function to display the feedback form
+  function displayFeedbackForm() {
+      const feedbackModal = document.getElementById('feedbackModal');
+      feedbackModal.style.display = 'block';
+  }
+
+  // Function to close the feedback form
+  function closeFeedbackForm() {
+      const feedbackModal = document.getElementById('feedbackModal');
+      feedbackModal.style.display = 'none';
+
+      // All questions have been answered, submit the form
+      const feedbackForm = document.getElementById('feedbackForm');
+
+      // You can handle the form data as needed or submit it to the server
+      // For demonstration, let's log the form data to the console
+      const formData = new FormData(feedbackForm);
+      for (const pair of formData.entries()) {
+          console.log(pair[0] + ': ' + pair[1]);
+      }
+
+      // If you want to submit the form to the server, uncomment the line below
+      // feedbackForm.submit();
+  }
+});
+
+
+
+// Function to close the welcome modal
+function closeWelcomeModal() {
+  const welcomeModal = document.getElementById('welcomeModal');
+  welcomeModal.style.display = 'none';
+}
+
 
 //modali alfredit
 
@@ -176,3 +242,11 @@ const myButton = document.getElementById('myButton');
           
       }
        
+
+
+    
+    
+    
+    
+    
+    
