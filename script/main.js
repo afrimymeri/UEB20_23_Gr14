@@ -145,13 +145,14 @@ const myButton = document.getElementById('myButton');
         const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
         return regex.test(email);
         }
-    
-        // Password Validation
         function validatePassword(password) {
         return password.length >= 8;
         }
 
-        function validimi2() {
+
+        //event perdoret qe mos me ja leju formes me e reload pagein edhe me ja prish lokacionin hrefit 
+        function validimi2(event) {
+          event.preventDefault();
           const email = document.querySelector('input[name="email"]').value;
           const password = document.querySelector('input[name="password"]').value;
       
@@ -163,8 +164,10 @@ const myButton = document.getElementById('myButton');
           if (!validatePassword(password)) {
               alert('Password must be at least 8 characters long.');
               return false;
+          }else{
+          window.location.href = "/src/index.html";
           }
-      
           return true; 
+          
       }
        
