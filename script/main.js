@@ -131,6 +131,20 @@ const myButton = document.getElementById('myButton');
        }
        window.onload = function() {
         const datasot = document.getElementById("dataSot");
+        const datasot2 = document.getElementById("dataSot2");
+        const datasot3 = document.getElementById("dataSot3");
+        const datasot4 = document.getElementById("dataSot4");
+        const datasot5 = document.getElementById("dataSot5");
+        const datasot6 = document.getElementById("dataSot6");
+        const datasot7 = document.getElementById("dataSot7");
+
         const sot = new Date();
         datasot.textContent = curdate(sot);
+        datasot2.textContent = curdate(sot);
+        datasot3.textContent = curdate(sot);
+        datasot4.textContent = curdate(sot);
+        datasot5.textContent = curdate(sot);
+        datasot6.textContent = curdate(sot);
+        datasot7.textContent = curdate(sot);
        };
+       
