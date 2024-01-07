@@ -1,5 +1,3 @@
-
-
   function allowDrop(ev) {
 	ev.preventDefault();
 	return false;	
@@ -51,13 +49,10 @@ const myButton = document.getElementById('myButton');
         myButton2.addEventListener('click', function() {
           
           modalTitle.textContent = 'Terapia Oksigjenore';
-          
-          
           modalBody.innerHTML = '';
-          
-          
           modalBody.appendChild(content2.cloneNode(true));
         });
+
         myButton3.addEventListener('click', function() {
           
           modalTitle.textContent = 'Terapia Magnetike';
@@ -107,11 +102,7 @@ const myButton = document.getElementById('myButton');
          myButton7.addEventListener('click', function() {
           
           modalTitle.textContent = 'Terapia e Ujërave (Hidroterapia)';
-          
-          
           modalBody.innerHTML = '';
-          
-          
           modalBody.appendChild(content7.cloneNode(true));
         });
 
