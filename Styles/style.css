@@ -541,3 +541,11 @@ img.testimonials-img {
       padding-left: calc(((100% - 1320px) / 2) + .75rem);
   }
 } 
+#directMAIL {
+  text-decoration: none;
+  color: black;
+}
+#directMAIL:hover {
+  color: white;
+  transition: .5 ease;
+}
