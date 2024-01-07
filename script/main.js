@@ -147,4 +147,33 @@ const myButton = document.getElementById('myButton');
         datasot6.textContent = curdate(sot);
         datasot7.textContent = curdate(sot);
        };
+
+
+
+       function validateEmail(email) {
+        const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        return regex.test(email);
+        }
+    
+        // Password Validation
+        function validatePassword(password) {
+        return password.length >= 8;
+        }
+
+        function validimi2() {
+          const email = document.querySelector('input[name="email"]').value;
+          const password = document.querySelector('input[name="password"]').value;
+      
+          if (!validateEmail(email)) {
+              alert('Please enter a valid email address.');
+              return false;
+          }
+      
+          if (!validatePassword(password)) {
+              alert('Password must be at least 8 characters long.');
+              return false;
+          }
+      
+          return true; 
+      }
        
