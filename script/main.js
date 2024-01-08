@@ -17,25 +17,7 @@ function drop(ev) {
 	ev.target.appendChild(draggedElement);
 }
 
-//timeout
-document.addEventListener('DOMContentLoaded', function () {
-  // Function to display a welcome notification
-  function displayWelcomeNotification() {
-      alert('Welcome to our Medical Clinic!');
-  }
 
-  // Check if the welcome message has been shown before
-  const welcomeMessageShown = sessionStorage.getItem('welcomeMessageShown');
-
-  if (!welcomeMessageShown) {
-      // If not shown, set a timeout to call the displayWelcomeNotification function after 5 seconds
-      setTimeout(function () {
-          displayWelcomeNotification();
-          // Set a flag in sessionStorage to indicate that the welcome message has been shown
-          sessionStorage.setItem('welcomeMessageShown', 'true');
-      }, 2000);
-  }
-});
 
 //feedback
 document.addEventListener('DOMContentLoaded', function () {
