@@ -620,3 +620,10 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+.ad {
+  position: left;
+  left: 0;
+  top: 0;
+  width: 50%; /* Adjust the width as needed */
+  height: 100%; /* Take the full height of the viewport */
+}
