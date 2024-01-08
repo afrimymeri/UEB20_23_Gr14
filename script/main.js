@@ -237,7 +237,9 @@ const myButton = document.getElementById('myButton');
               return false;
           }else{
           window.location.href = "/src/index.html";
+          alert("Login Successful");
           }
+          
           return true; 
           
       }
